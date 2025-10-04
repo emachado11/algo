@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>não sei minha palavra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #1e1e1e;
+      color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center; /* centraliza verticalmente */
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      max-width: 900px;
+      width: 100%;
+      align-items: flex-start;
+    }
+
+    .instructions {
+      flex: 1;
+      background: #2b2b2b;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    .example {
+      width: 300px;
+      background: #1f1f1f;
+      border: 2px solid #ffb300;
+      padding: 15px;
+      border-radius: 10px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 15px;
+      font-weight: 700;
+      color: #ffb300;
+      font-size: 1.5rem;
+    }
+
+    ol li {
+      margin-bottom: 15px;
+    }
+
+    .highlight {
+      font-weight: 700;
+      color: #ffb300;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #ffb300;
+      color: #1e1e1e;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    a.button:hover {
+      background-color: #0093cc;
+    }
+
+    @media (max-width: 800px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .example {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="instructions">
+      <h1>Como descobrir a palavra</h1>
+      <p>Se você não faz ideia de qual seja a sua palavra, faz o seguinte:</p>
+      <ol>
+        <li>Pega seu <span class="highlight">nome</span> e a <span class="highlight">data</span> no calendário do vídeo - é o dia marcado. Qual dia? Aí cabe a você, né.</li>
+        <li>Agora você vai rotacionar as letras do seu nome <span class="highlight">pra frente</span> no alfabeto, usando o número de rotações igual ao dia da data.</li>
+        <li>No campo de texto da página principal, escreve a palavra encontrada e seleciona a chave (data). Pra finalizar, clica em <span class="highlight">Ir</span>.</li>
+      </ol>
+    </div>
+
+    <div class="example">
+      <div>
+        <p><strong>Exemplo:</strong></p>
+        <p>Nome: <span class="highlight">Pedro</span><br>
+        Data: <span class="highlight">5/10/25</span></p>
+        <p>
+          ROT0 - Pedro<br>
+          ROT1 - Qfesp<br>
+          ROT2 - Rgtqt<br>
+          ROT3 - Shuru<br>
+          ROT4 - Tivsv<br>
+          ROT5 - Ujiwt
+        </p>
+        <p><em>A palavra certa é a do ROT5, então você vai escrever "Ujiwt" e marcar 5 na caixinha.</em></p>
+      </div>
+      <a href="index.html" class="button">⬅ Voltar</a>
+    </div>
+  </div>
+</body>
+</html>
